@@ -4,5 +4,6 @@ dist
 bower_components
 test/bower_components
 sources
-Burgers.sublime-project
-Burgers.sublime-workspace
+*.sublime-project
+*.sublime-workspace
+.DS_Store
