@@ -1,4 +1,35 @@
 @import 'normalize';
+@import 'fonts';
 
-// bower:scss
-// endbower
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+html {
+	height: 100%;
+	min-width: 1100px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}

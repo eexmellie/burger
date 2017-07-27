@@ -1,0 +1,50 @@
+$default-font: 'Ubuntu';
+$header-font: 'Gagalin';
+$fancy-font: 'Lifehack';
+
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+@font-face {
+	font-family: $fancy-font;
+	src: url('../fonts/Lifehack-Medium.woff') format('woff');
+	font-weight: $medium;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $header-font;
+	src: url('../fonts/Gagalin-Regular.woff') format('woff');
+	font-weight: $normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $default-font;
+	src: url('../fonts/Ubuntu-Light.woff') format('woff');
+	font-weight: $light;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $default-font;
+	src: url('../fonts/Ubuntu-Bold.woff') format('woff');
+	font-weight: $bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $default-font;
+	src: url('../fonts/Ubuntu.woff') format('woff');
+	font-weight: $normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: $default-font;
+	src: url('../fonts/Ubuntu-Medium.woff') format('woff');
+	font-weight: $medium;
+	font-style: normal;
+}
