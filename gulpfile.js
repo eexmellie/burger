@@ -73,7 +73,11 @@ gulp.task('html', ['styles', 'scripts'], () => {
 
 gulp.task('images', () => {
   return gulp.src('app/images/**/*')
-    .pipe($.cache($.imagemin()))
+    // .pipe($.cache($.imagemin([
+    //   $.imagemin.svgo({
+    //     plugins: []
+    //   })
+    // ])))
     .pipe(gulp.dest('dist/images'));
 });
 
