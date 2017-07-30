@@ -7,3 +7,4 @@ sources
 *.sublime-project
 *.sublime-workspace
 .DS_Store
+.publish
