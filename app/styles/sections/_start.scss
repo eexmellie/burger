@@ -78,7 +78,9 @@
 	font-size: 72px;
 	font-weight: $normal;
 	color: $orange;
-	padding-top: 60px;
+	&--start {
+		padding-top: 60px;
+	}
 }
 
 .start__text {

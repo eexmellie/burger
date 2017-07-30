@@ -1,0 +1,64 @@
+.best {
+	background-image: url('../images/bg/bg-best.png');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section__title--best {
+	color: $dark-text;
+	margin-bottom: 60px;
+}
+
+.best__list {
+	display: flex;
+}
+
+.best__item {
+	flex-basis: 33.3%;
+}
+
+.best__icon-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.best__icon-pic {
+	width: 90px;
+	height: 90px;
+}
+
+.best__icon-pic--meat {
+	fill: #e25028;
+}
+
+.best__icon-pic--hand {
+	fill: #f8b43a;
+}
+
+.best__icon-pic--natural {
+	fill: #8ac03e;
+}
+
+.best__title {
+	font-family: $fancy-font;
+	font-size: 24px;
+	font-weight: $medium;
+	text-align: center;
+	margin-bottom: 15px;
+	line-height: 1;
+}
+
+.best__text {
+	text-align: center;
+	opacity: 0.8;
+	font-size: 14px;
+	font-weight: $light;
+	line-height: 1.71;
+
+}
