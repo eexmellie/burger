@@ -13,8 +13,7 @@
 .header {
 	width: 100%;
 	padding-top: 10px;
-	display: flex;
-	align-items: center;
+	@include flex-center;
 	&__logo {
 		margin-right: auto;
 	}

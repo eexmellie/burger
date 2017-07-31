@@ -3,9 +3,7 @@
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flex-center;
 }
 
 .section__title--best {
@@ -22,9 +20,7 @@
 }
 
 .best__icon-wrap {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flex-center;
 	margin-bottom: 40px;
 }
 

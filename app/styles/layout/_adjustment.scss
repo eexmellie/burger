@@ -20,8 +20,6 @@
 .container {
 	width: $minwidth;
 	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flex-center;
 	flex-direction: column;	
 }
