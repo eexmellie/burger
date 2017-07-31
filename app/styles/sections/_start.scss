@@ -23,13 +23,16 @@
 	margin-right: 15px;
 }
 
+.nav__list {
+	display: flex;
+	align-items: center;
+}
+
 .nav__item {
-	display: inline-block;
-	vertical-align: middle;
+	display: flex;
+	align-items: center;
 	&:after {
 		content: '';
-		display: inline-block;
-		vertical-align: middle;
 		@include circle (4px, #fff);
 		margin: 0 12px;
 	}
@@ -44,8 +47,6 @@
 	font-weight: $medium;
 	text-transform: uppercase;
 	text-decoration: none;
-	display: inline-block;
-	vertical-align: middle;
 	transition: .3s;
 	&:hover {
 		text-decoration: underline;

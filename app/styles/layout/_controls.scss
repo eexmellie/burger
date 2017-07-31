@@ -1,6 +1,7 @@
 .button {
 	min-width: 98px;
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 	border-radius: 5px;
 	background-color: $button-color;
 	color: $light-text;

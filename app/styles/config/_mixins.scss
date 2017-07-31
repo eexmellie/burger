@@ -1,7 +1,7 @@
 @mixin circle($width, $color) {
 	width: $width;
 	height: $width;
-	border-radius: $width/2;
+	border-radius: 100%;
 	background-color: $color;
 }
 
