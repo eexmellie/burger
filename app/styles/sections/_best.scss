@@ -34,18 +34,18 @@
 .best__icon-pic {
 	width: 90px;
 	height: 90px;
-}
 
-.best__icon-pic--meat {
-	fill: $orange;
-}
+	&--meat{
+		fill: $orange;	
+	}
 
-.best__icon-pic--hand {
-	fill: $yellow;
-}
-
-.best__icon-pic--natural {
-	fill: $green;
+	&--hand{
+		fill: $yellow;
+	}
+	
+	&--natural{
+		fill: $green;
+	}
 }
 
 .best__title {
