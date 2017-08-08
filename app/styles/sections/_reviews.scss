@@ -1,12 +1,14 @@
-.reviews__list {
+.reviews {
+	background-color: $black;
+	&__list {
 	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.reviews__item {
+	}
+	&__item {
 	flex-basis: 25%;
 	height: 50%;
+	}
 }
 
 .review {
@@ -49,12 +51,12 @@
 	font-size: 14px;
 	font-weight: $normal;
 	text-transform: uppercase;
-	color: $light-text;
+	color: $white;
 	margin-bottom: 15px;
 }
 
 .review__text {
-	color: $light-text;
+	color: $white;
 	font-size: 14px;
 	font-weight: $light;
 	line-height: 1.72;
@@ -62,7 +64,7 @@
 }
 
 .review__button {
-	background-color: $dark-text;
+	background-color: $black;
 	&:hover {
 		background-color: $button-hover-dark;
 	}

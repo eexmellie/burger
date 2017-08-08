@@ -42,7 +42,7 @@
 }
 
 .nav__link {
-	color: $light-text;
+	color: $white;
 	font-size: 13px;
 	font-weight: $medium;
 	text-transform: uppercase;
@@ -77,7 +77,7 @@
 	font-family: $title-font;
 	font-size: 72px;
 	font-weight: $normal;
-	color: $orange;
+	color: $yellow;
 	&--start {
 		padding-top: 60px;
 	}
@@ -87,7 +87,7 @@
 	font-family: $fancy-font;
 	font-size: 65px;
 	font-weight: $medium;
-	color: $light-text;
+	color: $white;
 	line-height: 1;
 }
 
@@ -98,5 +98,5 @@
 .down-link__icon {
 	width: 30px;
 	height: 30px;
-	fill: #fff;
+	fill: #ffffff;
 }
