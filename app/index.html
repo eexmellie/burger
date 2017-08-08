@@ -330,6 +330,81 @@
 						</li>
 					</ul>
 				</section>
+
+				<section class="section delivery">
+					<div class="container">
+						<h2 class="section__title section__title--delivery">Закажите доставку</h2>
+						<form action="" class="form">
+							<div class="form__column">
+								<div class="form__row">
+									<label class="form__field">
+										<div class="form__label">Имя</div>
+										<input type="text" class="form__control" name="name" placeholder="">
+									</label>
+									<label class="form__field">
+										<div class="form__label">Телефон</div>
+										<input type="text" class="form__control" name="phone" placeholder="">
+									</label>
+								</div>
+								<div class="form__row">
+									<label class="form__field">
+										<div class="form__label">Улица</div>
+										<input type="text" class="form__control" name="street" placeholder="">
+									</label>
+								</div>
+								<div class="form__row">
+									<label class="form__field">
+										<div class="form__label">Дом</div>
+										<input type="text" class="form__control" name="house" placeholder="">
+									</label>
+									<label class="form__field">
+										<div class="form__label">Корпус</div>
+										<input type="text" class="form__control" name="block" placeholder="">
+									</label>
+									<label class="form__field">
+										<div class="form__label">Квартира</div>
+										<input type="text" class="form__control" name="apt" placeholder="">
+									</label>
+									<label class="form__field">
+										<div class="form__label">Этаж</div>
+										<input type="text" class="form__control" name="floor" placeholder="">
+									</label>
+								</div>
+							</div>
+							<div class="form__column">
+								<div class="form__row">
+									<label class="form__field">
+										<div class="form__label">Комментарий</div>
+										<textarea type="text" class="form__control form__control--textarea" name="comment" placeholder=""></textarea>
+									</label>
+								</div>
+								<div class="form__row">
+									<label class="form__radio">
+										<input class="form__control form__control--radio" type="radio" name="payment" value="change">
+										<div class="form__radio-fake"></div>
+										<span class="form__radio-label">Потребуется сдача</span>
+									</label>
+									<label class="form__radio">
+										<input class="form__control form__control--radio" type="radio" name="payment" value="card" checked>
+										<div class="form__radio-fake"></div>
+										<span class="form__radio-label">Оплата по карте</span>
+									</label>
+								</div>
+								<div class="form__row">
+									<label class="form__radio form__radio--checkbox">
+										<input class="form__control form__control--radio" type="checkbox" name="callback" checked>
+										<div class="form__radio-fake"></div>
+										<span class="form__radio-label">Не перезванивать</span>
+									</label>
+								</div>
+								<div class="form__row">
+									<button type="submit" class="button form__button form__button--submit">Заказать</button>
+									<button type="reset" class="button form__button form__button--reset">Очистить</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
 			</div>
 		</div>
 		<ul class="fixed-menu">

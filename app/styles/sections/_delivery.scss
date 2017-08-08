@@ -1,0 +1,151 @@
+.delivery {
+	background-image: url('../images/bg/bg-delivery.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	@include flex-center;
+	flex-direction: column;
+}
+
+.section__title--delivery {
+	margin-bottom: rem(60px);
+}
+
+.form {
+	@include flex-center;
+	margin-left: -2%;
+	align-items: flex-start;
+
+	&__column{
+		width: 48%;
+		margin-right: 2%;
+	}
+
+	&__row {
+		@include flex-center;
+		justify-content: flex-start;
+		margin-bottom: rem(17px);
+	}
+}
+
+.form__field {
+	flex-basis: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
+	min-width: 0;
+	margin-right: rem(20px);
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.form__label {
+	font-weight: $light;
+	font-size: rem(14px);
+	color: $white;
+	margin-bottom: rem(7px);
+}
+
+.form__control {
+	border: rem(1px) solid #d1cfcb;
+	border-radius: rem(5px);
+	padding: rem(8px) rem(10px);
+	font-size: rem(14px);
+	width: 100%;
+
+	&--textarea {
+		height: rem(110px);
+		resize: none;
+	}
+
+	&--radio {
+		display: none;
+	}
+
+	&:focus {
+		outline: none;
+		border-color: $orange;
+	}
+}
+
+.form__radio {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	margin-right: rem(20px);
+
+	&-label {
+		font-weight: $light;
+		font-size: rem(14px);
+		color: $white;
+	}
+}
+
+.form__radio-fake {
+ 	width: rem(16px);
+ 	height: rem(16px);
+	border-radius: 50%;
+	background: #fff;
+	position: relative;
+	margin-right: rem(15px);
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: rem(0px);
+		height: rem(0px);
+		border-radius: 50%;
+		background: $orange;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: width .3s, height .3s;
+	}
+}
+
+.form__control--radio:checked {
+	&+.form__radio-fake {
+		&::after {
+			width: rem(8px);
+			height: rem(8px);
+		}
+	}
+}
+
+.form__radio--checkbox {
+	.form__radio-fake {
+		border-radius: 0;
+		&::after {
+			background-color: transparent;
+		}
+	}
+
+	.form__control--radio:checked {
+		&+.form__radio-fake {
+			&::after {
+				background-image: url('../images/icons/checkmark.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: contain;
+				width: rem(12px);
+				height: rem(9px);
+			}
+		}
+	}
+}
+
+.form__button {
+	border: none;
+	margin-right: rem(20px);
+
+	&--reset {
+		background-color: $black;
+		&:hover {
+			background-color: $button-hover-dark;
+		}
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
