@@ -15,6 +15,16 @@
 	overflow: hidden;
 }
 
+html {
+	@include tablets {
+		font-size: rem(15px);
+	}
+
+	@include phones {
+		font-size: rem(13px);
+	}
+}
+
 html, body {
 	height: 100%;
 }
