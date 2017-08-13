@@ -18,6 +18,10 @@
 	background-size: cover;
 	height: rem(60px);
 
+	@include phones {
+		height: rem(115px);
+	}
+
 	&__container {
 		height: 100%;
 		display: flex;
@@ -25,10 +29,17 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-wrap: nowrap;
-	}
 
-	&__contact {
-		// margin-right: auto;
+		@include phones {
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+}
+
+.footer__contact {
+	@include phones {
+		margin-bottom: rem(15px);
 	}
 }
 
@@ -44,6 +55,10 @@
 	font-weight: $bold;
 	font-size: rem(14px);
 	display: flex;
+
+	@include phones {
+		justify-content: center;
+	}
 
 	&__icon-wrap {
 		margin-right: rem(7px);
