@@ -12,15 +12,20 @@
 
 .header {
 	width: 100%;
-	padding-top: 10px;
+	padding-top: rem(10px);
 	@include flex-center;
+
 	&__logo {
 		margin-right: auto;
 	}
 }
 
 .nav {
-	margin-right: 15px;
+	margin-right: rem(15px);
+
+	@include tablets {
+		display: none;
+	}
 }
 
 .nav__list {
@@ -33,8 +38,8 @@
 	align-items: center;
 	&:after {
 		content: '';
-		@include circle (4px, #fff);
-		margin: 0 12px;
+		@include circle (rem(4px), #fff);
+		margin: 0 rem(12px);
 	}
 	&:last-child:after {
 		display: none;
@@ -43,13 +48,60 @@
 
 .nav__link {
 	color: $white;
-	font-size: 13px;
+	font-size: rem(13px);
 	font-weight: $medium;
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: .3s;
+
 	&:hover {
 		text-decoration: underline;
+	}
+}
+
+.header__btns {
+	display: flex;
+	align-items: center;
+}
+
+.order-link {
+	@include tablets {
+		margin-right: rem(30px);
+	}
+}
+
+.hamburger-menu {
+	height: rem(22px);
+	display: none;
+	position: relative;
+
+	@include tablets {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.hamburger-menu__bars {
+
+	&, &::before, &::after {
+		background-color: #fff;
+		width: rem(24px);
+		height: rem(5px);
+		border-radius: rem(3px);
+		content: '';
+		display: block;
+	}
+
+	&::before, &::after {
+		position: absolute;
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
 	}
 }
 
@@ -58,37 +110,87 @@
 	display: flex;
 	align-items: center;
 	padding-bottom: 10%;
+
+	@include tablets {
+		flex-direction: column;
+		width: 70%;
+		justify-content: center;
+	}
 }
 
-.start__img, .start__description {
-	flex-basis: 50%;
+.start__img-wrap, .start__description {
 	display: flex;
+	flex-basis: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
 }
 
 .start__img {
-	align-items:center;
+
+	&-wrap {
+		margin-right: rem(10px);
+
+		@include tablets {
+			margin-right: 0;
+			flex-shrink: 1;
+			flex-grow: 0;
+			flex-basis: auto;
+		}
+	}
+
+	&-pic {
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
+	}
 }
+
 
 .start__description {
 	flex-direction: column;
+
+	@include tablets {
+		align-items: center;
+		flex-shrink: 0;
+		flex-grow: 0;
+		flex-basis: auto;
+	}
 }
 
 .section__title {
 	font-family: $title-font;
-	font-size: 72px;
+	font-size: rem(72px);
 	font-weight: $normal;
 	color: $yellow;
+
 	&--start {
-		padding-top: 60px;
+		padding-top: rem(60px);
+
+		@include tablets {
+			padding-top: 0;
+			padding-bottom: rem(5px);
+		}
+	}
+
+	@include phones {
+		font-size: rem(50px);
 	}
 }
 
 .start__text {
 	font-family: $fancy-font;
-	font-size: 65px;
+	font-size: rem(65px);
 	font-weight: $medium;
 	color: $white;
 	line-height: 1;
+
+	@include tablets {
+		text-align: center;
+	}
+
+	@include phones {
+		font-size: rem(54px);
+	}
 }
 
 .down-link {
@@ -96,7 +198,7 @@
 }
 
 .down-link__icon {
-	width: 30px;
-	height: 30px;
+	width: rem(30px);
+	height: rem(30px);
 	fill: #ffffff;
 }
