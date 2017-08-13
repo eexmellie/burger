@@ -8,11 +8,19 @@
 
 .section__title--best {
 	color: $black;
-	margin-bottom: 60px;
+	margin-bottom: rem(60px);
+
+	@include phones {
+		margin-bottom: rem(20px);
+	}
 }
 
 .best__list {
 	display: flex;
+
+	@include phones {
+		flex-direction: column;
+	}
 }
 
 .best__item {
@@ -20,20 +28,34 @@
 	flex-grow: 1;
 	flex-shrink: 1;
 	min-width: 0;
-	margin-right: 20px;
+	margin-right: rem(20px);
+
 	&:last-child {
 		margin-right: 0;
+	}
+
+	@include phones {
+		display: flex;
+		flex-basis: auto;
+		margin-right: 0;
+		align-items: flex-start;
+		margin-bottom: rem(25px);
 	}
 }
 
 .best__icon-wrap {
 	@include flex-center;
-	margin-bottom: 40px;
+	margin-bottom: rem(40px);
+
+	@include phones {
+		margin-bottom: 0;
+		margin-right: rem(20px);
+	}
 }
 
 .best__icon-pic {
-	width: 90px;
-	height: 90px;
+	width: rem(90px);
+	height: rem(90px);
 
 	&--meat{
 		fill: $orange;	
@@ -50,18 +72,27 @@
 
 .best__title {
 	font-family: $fancy-font;
-	font-size: 24px;
+	font-size: rem(24px);
 	font-weight: $medium;
 	text-align: center;
-	margin-bottom: 15px;
+	margin-bottom: rem(15px);
 	line-height: 1;
+
+	@include phones {
+		text-align: left;
+		margin-bottom: rem(10px);
+	}
 }
 
 .best__text {
 	text-align: center;
 	opacity: 0.8;
-	font-size: 14px;
+	font-size: rem(14px);
 	font-weight: $light;
 	line-height: 1.71;
+
+	@include phones {
+		text-align: left;
+	}
 
 }
