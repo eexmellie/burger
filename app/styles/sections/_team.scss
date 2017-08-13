@@ -14,15 +14,26 @@
 		padding-left: 7%;
 		padding-right: 10%;
 		@include flex-center;
+
+		@include tablets {
+			width: 100%;
+			padding: 0 27%;
+		}
+	}
+
+	&__content {
+		@include tablets {
+			text-align: center;
+		}	
 	}
 }
 
 .section__title--team {
 	margin-bottom: 15%;
-}
 
-.team-acco {
-	margin-left: rem(21px);
+	@include phones {
+		margin-bottom: 7%;
+	}
 }
 
 .team-acco__name {
@@ -31,10 +42,10 @@
 	color: $white;
 	text-decoration: none;
 	text-transform: uppercase;
-	display: inline-flex;
-	position: relative;
+	display: flex;
+	align-items: center;
+
 	&::before {
-		position: absolute;
 		content: '';
 		display: block;
 		width: 0;
@@ -43,8 +54,12 @@
 		border-bottom: rem(0px) solid transparent;
 		border-left: rem(5px) solid transparent;
 		border-right: rem(5px) solid transparent;
-		top: rem(7px);
-		left: rem(-20px);
+		margin-right: rem(10px);
+	}
+
+	@include tablets {
+		font-size: rem(25px);
+		justify-content: center;
 	}
 }
 
@@ -53,6 +68,11 @@
 	overflow: hidden;
 	display: flex;
 	justify-content: flex-start;
+
+	@include tablets {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .team-acco__item{
@@ -74,6 +94,10 @@
 		}
 
 	}
+
+	@include phones {
+		margin-bottom: rem(20px);
+	}
 }
 
 .team-acco__avatar-box {
@@ -83,6 +107,11 @@
 	overflow: hidden;
 	margin-right: rem(25px);
 	flex-shrink: 0;
+
+	@include tablets {
+		margin-right: 0;
+		margin-bottom: rem(20px);
+	}
 }
 
 
