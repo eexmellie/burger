@@ -32,7 +32,7 @@ html, body {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: $default-font;
+	font-family: $default-font, Helvetica, sans-serif;
 	line-height: 1.42;
 	font-size: rem(16px);
 	color: $black;
