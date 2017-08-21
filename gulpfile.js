@@ -38,10 +38,10 @@ gulp.task('scripts', () => {
 
 function lint(files) {
   return gulp.src(files)
-    .pipe($.eslint({ fix: true }))
-    .pipe(reload({stream: true, once: true}))
-    .pipe($.eslint.format())
-    .pipe($.if(!browserSync.active, $.eslint.failAfterError()));
+    // .pipe($.eslint({ fix: true }))
+    // .pipe(reload({stream: true, once: true}))
+    // .pipe($.eslint.format())
+    // .pipe($.if(!browserSync.active, $.eslint.failAfterError()));
 }
 
 gulp.task('lint', () => {

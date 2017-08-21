@@ -67,22 +67,14 @@
 	}
 }
 
-.menu-acco__trigger{
+.menu-acco__trigger {
 	text-decoration: none;
-	display: flex;
 	height: 100%;
-	justify-content: center;
-	align-items: center;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	width: rem(80px);
-	flex-shrink: 0;
 	position: relative;
-
-	@include tablets {
-		align-items: flex-end;
-	}
 
 	&::before {
 		content: '';
@@ -113,17 +105,22 @@
 	line-height: 1;
 	color: $white;
 	text-transform: uppercase;
-	transform: rotate(-90deg);
 	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-90deg);
 	white-space: nowrap;
 
 	@include tablets {
-		transform: rotate(-90deg) translateX(60%);
+		top: 100%;
+		transform-origin: 50% 50%;
+		transform: translate(-50%, -50%) rotate(-90deg) translateX(50%);
+		margin-top: rem(-15px);
 	}
 
-	@include tablets {
-		transform: rotate(-90deg) translateX(70%);
-	}
+	// @include phones {
+	// 	transform: rotate(-90deg) translateX(70%);
+	// }
 }
 
 

@@ -4,6 +4,10 @@
 	background-position: center bottom;
 	background-size: cover;
 	@include flex-center;
+
+	&__container {
+		margin: 0;
+	}
 }
 
 .section__title--best {
@@ -17,6 +21,7 @@
 
 .best__list {
 	display: flex;
+	align-self: stretch;
 
 	@include phones {
 		flex-direction: column;

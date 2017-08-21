@@ -107,14 +107,18 @@
 
 .start__content {
 	flex-grow: 1;
+	flex-shrink: 1;
+	min-height: 0;
 	display: flex;
 	align-items: center;
 	padding-bottom: 10%;
+	align-self: stretch;
 
 	@include tablets {
 		flex-direction: column;
 		width: 70%;
 		justify-content: center;
+		align-self: center;
 	}
 }
 
@@ -129,6 +133,9 @@
 
 	&-wrap {
 		margin-right: rem(10px);
+		flex-shrink: 1;
+		min-height: 0;
+		justify-content: center;
 
 		@include tablets {
 			margin-right: 0;

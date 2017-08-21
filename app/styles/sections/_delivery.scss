@@ -25,11 +25,14 @@
 	@include flex-center;
 	margin-right: -2%;
 	align-items: flex-start;
+	align-self: stretch;
 
 	@include tablets {
 		flex-direction: row;
 		flex-wrap: wrap;
 		width: 69%;
+		align-self: center;
+
 	}
 
 	@include phones {
