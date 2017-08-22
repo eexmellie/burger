@@ -61,9 +61,14 @@
 							</div>
 							<div class="header__btns">
 								 <a href="" class="order-link button" data-goto="6">Заказать</a>
-								 <a href="" class="hamburger-menu">
+								 <button class="hamburger-menu js-toggle" type="button" data-toggle="header__menu | header__menu--active; fullscreen-menu | hidden; hamburger-menu | hidden">
 								 	<div class="hamburger-menu__bars"></div>
-								 </a>
+								 </button>
+								 <button class="fullscreen-menu hidden js-toggle" type="button" data-toggle="header__menu | header__menu--active; fullscreen-menu | hidden; hamburger-menu | hidden">
+								 	<svg class="fullscreen-menu__pic">
+										<use xlink:href="./images/icons/sprite.svg#cross"></use>
+									</svg>
+								 </button>
 							</div>
 						</header>
 						<div class="start__content">
@@ -638,6 +643,7 @@
 		<!-- build:js scripts/main.js -->
 		<script src="scripts/svg4everybody.js"></script>
 		<script>svg4everybody();</script>
+		<script src="scripts/main.js"></script>
 		<!-- endbuild -->
 	</body>
 </html>

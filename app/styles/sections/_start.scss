@@ -3,6 +3,7 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	position: relative;
 }
 
 .start__container {
@@ -17,6 +18,23 @@
 
 	&__logo {
 		margin-right: auto;
+		z-index: 1;
+	}
+
+	&__menu {
+		@include tablets {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: $black;
+			display: none;
+
+			&--active {
+				display: block;
+			}
+		}
 	}
 }
 
@@ -24,22 +42,40 @@
 	margin-right: rem(15px);
 
 	@include tablets {
-		display: none;
+		height: 100%;
 	}
 }
 
 .nav__list {
 	display: flex;
 	align-items: center;
+
+	@include tablets {
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+	}
 }
 
 .nav__item {
 	display: flex;
 	align-items: center;
+
+	@include tablets {
+		display: block;
+	}
+
 	&:after {
 		content: '';
 		@include circle (rem(4px), #fff);
 		margin: 0 rem(12px);
+
+		@include tablets {
+			display: block;
+			margin: rem(15px) auto;
+			text-align: center;
+			@include circle (6px, #fff);
+		}
 	}
 	&:last-child:after {
 		display: none;
@@ -53,6 +89,11 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: .3s;
+
+	@include tablets {
+		font-size: rem(24px);
+		font-weight: $normal;
+	}
 
 	&:hover {
 		text-decoration: underline;
@@ -74,6 +115,10 @@
 	height: rem(22px);
 	display: none;
 	position: relative;
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
 
 	@include tablets {
 		display: flex;
@@ -103,6 +148,35 @@
 	&::after {
 		bottom: 0;
 	}
+}
+
+.fullscreen-menu {
+	opacity: .7;
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+	display: none;
+
+	@include tablets {
+		display: block;
+	}
+
+	&__pic {
+		width: rem(20px);
+		height: rem(20px);
+		fill: $white;
+		display: block;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.hidden {
+	display: none;
 }
 
 .start__content {
