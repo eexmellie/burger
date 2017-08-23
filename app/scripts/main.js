@@ -1,6 +1,12 @@
 (function() {
-	var buttons = document.querySelectorAll('.js-toggle');
 
+	// Google map init
+	if (document.getElementById('map')) {
+  		google.maps.event.addDomListener(window, 'load', mapGoogle.init);
+	}
+
+
+	var buttons = document.querySelectorAll('.js-toggle');
 	for (var i = 0; i < buttons.length; i++) {
 		var button = buttons[i];
 
