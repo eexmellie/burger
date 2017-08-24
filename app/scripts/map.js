@@ -8,7 +8,7 @@ var mapGoogle = (function() {
 		});
 
 		var logo = {
-			url: '../images/logo/map-marker.svg',
+			url: 'images/logo/map-marker.svg',
 			size: new google.maps.Size(46, 57),
 			scaledSize: new google.maps.Size(46, 57)
 		};
