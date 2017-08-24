@@ -5,6 +5,14 @@
   		google.maps.event.addDomListener(window, 'load', mapGoogle.init);
 	}
 
+	//Slider
+    document.addEventListener('DOMContentLoaded', function () {
+        var percentage = document.querySelector('.js_slider');
+
+        lory(percentage, {
+        	infinite: 1
+        });
+    });
 
 	var buttons = document.querySelectorAll('.js-toggle');
 	for (var i = 0; i < buttons.length; i++) {
