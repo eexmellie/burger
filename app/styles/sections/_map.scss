@@ -1,9 +1,15 @@
 .map {
-	background-image: url('../images/bg/bg-map.png');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+
+	background-color: $black;
 	position: relative;
+
+
+	&__container {
+		height: calc(100% - 60px);
+		@include phones {
+			height: calc(100% - 115px);
+		}
+	}
 }
 
 .footer {
