@@ -748,7 +748,7 @@
 				<section class="section delivery">
 					<div class="container">
 						<h2 class="section__title section__title--delivery">Закажите доставку</h2>
-						<form action="" class="form">
+						<form action="server.php" method="POST" class="form" id="form">
 							<div class="form__column">
 								<div class="form__row">
 									<label class="form__field">
@@ -806,7 +806,7 @@
 								</div>
 								<div class="form__row form__row--shifted">
 									<label class="form__radio form__radio--checkbox">
-										<input class="form__control form__control--radio" type="checkbox" name="callback" checked>
+										<input class="form__control form__control--radio" type="checkbox" name="callback" value="1">
 										<div class="form__radio-fake"></div>
 										<span class="form__radio-label">Не перезванивать</span>
 									</label>
@@ -923,6 +923,8 @@
 		<script src="scripts/main.js"></script>
 		<script src="scripts/accordeon.js"></script>
 		<script src="scripts/modal.js"></script>
+		<script src="scripts/form.js"></script>
+
 		<!-- endbuild -->
 	</body>
 </html>
