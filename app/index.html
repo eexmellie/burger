@@ -39,28 +39,28 @@
 								<nav class="nav">
 									<ul class="nav__list">
 										<li class="nav__item">
-											<a href="" class="nav__link" data-goto="1">О нас</a>
+											<a href="" class="nav__link js-goto" data-goto="2">О нас</a>
 										</li>
 										<li class="nav__item">
-											<a href="" class="nav__link" data-goto="2">Бургеры</a>
+											<a href="" class="nav__link js-goto" data-goto="3">Бургеры</a>
 										</li>
 										<li class="nav__item">
-											<a href="" class="nav__link" data-goto="3">Команда</a>
+											<a href="" class="nav__link js-goto" data-goto="4">Команда</a>
 										</li>
 										<li class="nav__item">
-											<a href="" class="nav__link" data-goto="4">Меню</a>
+											<a href="" class="nav__link js-goto" data-goto="5">Меню</a>
 										</li>
 										<li class="nav__item">
-											<a href="" class="nav__link" data-goto="5">Отзывы</a>
+											<a href="" class="nav__link js-goto" data-goto="6">Отзывы</a>
 										</li>
 										<li class="nav__item">
-											<a href="" class="nav__link" data-goto="7">Контакты</a>
+											<a href="" class="nav__link js-goto" data-goto="8">Контакты</a>
 										</li>
 									</ul>
 								</nav>
 							</div>
 							<div class="header__btns">
-								 <a href="" class="order-link button" data-goto="6">Заказать</a>
+								 <a href="" class="order-link button js-goto" data-goto="7">Заказать</a>
 								 <button class="hamburger-menu js-toggle" type="button" data-toggle="header__menu | header__menu--active; fullscreen-menu | hidden; hamburger-menu | hidden">
 								 	<div class="hamburger-menu__bars"></div>
 								 </button>
@@ -80,7 +80,7 @@
 								<div class="start__text">натуральные бургеры</div>
 							</div>
 						</div>
-						<a href="" class="down-link" data-goto="1">
+						<a href="" class="down-link js-goto" data-goto="2">
 							<svg class="down-link__icon">
 								<use xlink:href="./images/icons/sprite.svg#arrow-scroll"></use>
 							</svg>
@@ -137,113 +137,311 @@
 				</section>
 
 				<section class="section burgers">
-					<div class="container burgers__container">
-						<a class="slider__arrow slider__arrow--left">
+					<div class="container burgers__container js_slider">
+						<a class="slider__arrow slider__arrow--left js_prev">
 							<svg class="arrow__icon arrow__icon--left">
 								<use xlink:href="./images/icons/sprite.svg#arrow-scroll"></use>
 							</svg>
 						</a>
-						<ul class="burgers__list">
-							<li class="burgers__item">
-								<div class="burgers__img-wrap">
-									<img src="images/content/burgers/darkburger.png" alt="" class="burgers__img-pic">
-								</div>
-								<div class="burgers__description desc">
-									<div class="section__title section__title--burgers">Dark beef burger</div>
-									<div class="desc__content">
-										<p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+						<div class="js_frame burgers__frame">
+							<ul class="burgers__list js_slides">
+								<li class="burgers__item js_slide">
+									<div class="burgers__img-wrap">
+										<img src="images/content/burgers/darkburger.png" alt="" class="burgers__img-pic">
 									</div>
-									<div class="desc__price price">
-										<div class="price__number">500</div>
-										<div class="price__currency">рублей</div>
-										<div class="button">Заказать</div>
-									</div>
-								</div>
-								<div class="burgers__ingredients">
-									<div class="ingredients">
-										<svg class="ingredients__pic">
-											<use xlink:href="./images/icons/sprite.svg#burger"></use>
-										</svg>
-										<div class="ingredients__title">Состав</div>
-									</div>
-									<div class="ingredients__full">
-										<div class="ingredients__list-wrap">
-											<table class="ingredients__list">
-												<tr class="ingredients__item ingredient">
-													<td class="ingredient__img ingredient__cell">
-														<svg class="ingredient__pic ingredient__pic--beef">
-															<use xlink:href="./images/icons/sprite.svg#beef"></use>
-														</svg>
-													</td>
-													<td class="ingredient__name ingredient__cell">Говядина</td>
-													<td class="ingredient__amount ingredient__cell">300 г.</td>
-												</tr>
-												<tr class="ingredients__item ingredient">
-													<td class="ingredient__img ingredient__cell">
-														<svg class="ingredient__pic ingredient__pic--buns">
-															<use xlink:href="./images/icons/sprite.svg#buns"></use>
-														</svg>
-													</td>
-													<td class="ingredient__name ingredient__cell">Булочки</td>
-													<td class="ingredient__amount ingredient__cell">100 г</td>
-												</tr>
-												<tr class="ingredients__item ingredient">
-													<td class="ingredient__img ingredient__cell">
-														<svg class="ingredient__pic ingredient__pic--salad">
-															<use xlink:href="./images/icons/sprite.svg#salad"></use>
-														</svg>
-													</td>
-													<td class="ingredient__name ingredient__cell">Зелень</td>
-													<td class="ingredient__amount ingredient__cell">70 г</td>
-												</tr>
-												<tr class="ingredients__item ingredient">
-													<td class="ingredient__img ingredient__cell">
-														<svg class="ingredient__pic ingredient__pic--sauce">
-															<use xlink:href="./images/icons/sprite.svg#sauce"></use>
-														</svg>
-													</td>
-													<td class="ingredient__name ingredient__cell">Соус</td>
-													<td class="ingredient__amount ingredient__cell">150 г</td>
-												</tr>
-												<tr class="ingredients__item ingredient">
-													<td class="ingredient__img ingredient__cell">
-														<svg class="ingredient__pic ingredient__pic--cucumber">
-															<use xlink:href="./images/icons/sprite.svg#cucumber"></use>
-														</svg>
-													</td>
-													<td class="ingredient__name ingredient__cell">Овощи</td>
-													<td class="ingredient__amount ingredient__cell">200 г</td>
-												</tr>
-												<tr class="ingredients__item ingredient">
-													<td class="ingredient__img ingredient__cell">
-														<svg class="ingredient__pic ingredient__pic--cheese">
-															<use xlink:href="./images/icons/sprite.svg#cheese"></use>
-														</svg>
-													</td>
-													<td class="ingredient__name ingredient__cell">Сыр</td>
-													<td class="ingredient__amount ingredient__cell">80 г</td>
-												</tr>
-											</table>
+									<div class="burgers__description desc">
+										<div class="section__title section__title--burgers">Dark beef burger</div>
+										<div class="desc__content">
+											<p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
 										</div>
-										<button class="ingredients__close" type="button">
-											<svg class="ingredients__close-pic">
-												<use xlink:href="./images/icons/sprite.svg#cross"></use>
+										<div class="desc__price price">
+											<div class="price__number">500</div>
+											<div class="price__currency">рублей</div>
+											<div class="order-link button js-goto" data-goto="7">Заказать</div>
+										</div>
+									</div>
+									<div class="burgers__ingredients">
+										<div class="ingredients">
+											<svg class="ingredients__pic">
+												<use xlink:href="./images/icons/sprite.svg#burger"></use>
 											</svg>
-										</button>
+											<div class="ingredients__title">Состав</div>
+										</div>
+										<div class="ingredients__full">
+											<div class="ingredients__list-wrap">
+												<table class="ingredients__list">
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--beef">
+																<use xlink:href="./images/icons/sprite.svg#beef"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Говядина</td>
+														<td class="ingredient__amount ingredient__cell">300 г.</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--buns">
+																<use xlink:href="./images/icons/sprite.svg#buns"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Булочки</td>
+														<td class="ingredient__amount ingredient__cell">100 г</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--salad">
+																<use xlink:href="./images/icons/sprite.svg#salad"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Зелень</td>
+														<td class="ingredient__amount ingredient__cell">70 г</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--sauce">
+																<use xlink:href="./images/icons/sprite.svg#sauce"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Соус</td>
+														<td class="ingredient__amount ingredient__cell">150 г</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--cucumber">
+																<use xlink:href="./images/icons/sprite.svg#cucumber"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Овощи</td>
+														<td class="ingredient__amount ingredient__cell">200 г</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--cheese">
+																<use xlink:href="./images/icons/sprite.svg#cheese"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Сыр</td>
+														<td class="ingredient__amount ingredient__cell">80 г</td>
+													</tr>
+												</table>
+											</div>
+											<button class="ingredients__close" type="button">
+												<svg class="ingredients__close-pic">
+													<use xlink:href="./images/icons/sprite.svg#cross"></use>
+												</svg>
+											</button>
+										</div>
 									</div>
-								</div>
-								<div class="burgers__calories calories">
-									<div class="calories__icon">
-									<svg class="calories__pic">
-										<use xlink:href="./images/icons/sprite.svg#kkal"></use>
-									</svg>
-									<div class="calories__number">1200</div>
+									<div class="burgers__calories calories">
+										<div class="calories__icon">
+										<svg class="calories__pic">
+											<use xlink:href="./images/icons/sprite.svg#kkal"></use>
+										</svg>
+										<div class="calories__number">1200</div>
+										</div>
+										<div class="calories__title">ккал</div>
 									</div>
-									<div class="calories__title">ккал</div>
-								</div>
-							</li>
-						</ul>
-						<a class="slider__arrow slider__arrow--right">
+								</li>
+								<li class="burgers__item js_slide">
+									<div class="burgers__img-wrap">
+										<img src="images/content/burgers/shrimpburger.png" alt="" class="burgers__img-pic">
+									</div>
+									<div class="burgers__description desc">
+										<div class="section__title section__title--burgers">Shrimp burger</div>
+										<div class="desc__content">
+											<p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+										</div>
+										<div class="desc__price price">
+											<div class="price__number">500</div>
+											<div class="price__currency">рублей</div>
+											<div class="order-link button js-goto" data-goto="7">Заказать</div>
+										</div>
+									</div>
+									<div class="burgers__ingredients">
+										<div class="ingredients">
+											<svg class="ingredients__pic">
+												<use xlink:href="./images/icons/sprite.svg#burger"></use>
+											</svg>
+											<div class="ingredients__title">Состав</div>
+										</div>
+										<div class="ingredients__full">
+											<div class="ingredients__list-wrap">
+												<table class="ingredients__list">
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--beef">
+																<use xlink:href="./images/icons/sprite.svg#beef"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Говядина</td>
+														<td class="ingredient__amount ingredient__cell">300 г.</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--buns">
+																<use xlink:href="./images/icons/sprite.svg#buns"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Булочки</td>
+														<td class="ingredient__amount ingredient__cell">100 г</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--salad">
+																<use xlink:href="./images/icons/sprite.svg#salad"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Зелень</td>
+														<td class="ingredient__amount ingredient__cell">70 г</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--sauce">
+																<use xlink:href="./images/icons/sprite.svg#sauce"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Соус</td>
+														<td class="ingredient__amount ingredient__cell">150 г</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--cucumber">
+																<use xlink:href="./images/icons/sprite.svg#cucumber"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Овощи</td>
+														<td class="ingredient__amount ingredient__cell">200 г</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--cheese">
+																<use xlink:href="./images/icons/sprite.svg#cheese"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Сыр</td>
+														<td class="ingredient__amount ingredient__cell">80 г</td>
+													</tr>
+												</table>
+											</div>
+											<button class="ingredients__close" type="button">
+												<svg class="ingredients__close-pic">
+													<use xlink:href="./images/icons/sprite.svg#cross"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="burgers__calories calories">
+										<div class="calories__icon">
+										<svg class="calories__pic">
+											<use xlink:href="./images/icons/sprite.svg#kkal"></use>
+										</svg>
+										<div class="calories__number">1200</div>
+										</div>
+										<div class="calories__title">ккал</div>
+									</div>
+								</li>
+								<li class="burgers__item js_slide">
+									<div class="burgers__img-wrap">
+										<img src="images/content/burgers/sandwich.png" alt="" class="burgers__img-pic">
+									</div>
+									<div class="burgers__description desc">
+										<div class="section__title section__title--burgers">Sandwich burger</div>
+										<div class="desc__content">
+											<p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+										</div>
+										<div class="desc__price price">
+											<div class="price__number">500</div>
+											<div class="price__currency">рублей</div>
+											<div class="order-link button js-goto" data-goto="7">Заказать</div>
+										</div>
+									</div>
+									<div class="burgers__ingredients">
+										<div class="ingredients">
+											<svg class="ingredients__pic">
+												<use xlink:href="./images/icons/sprite.svg#burger"></use>
+											</svg>
+											<div class="ingredients__title">Состав</div>
+										</div>
+										<div class="ingredients__full">
+											<div class="ingredients__list-wrap">
+												<table class="ingredients__list">
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--beef">
+																<use xlink:href="./images/icons/sprite.svg#beef"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Говядина</td>
+														<td class="ingredient__amount ingredient__cell">300 г.</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--buns">
+																<use xlink:href="./images/icons/sprite.svg#buns"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Булочки</td>
+														<td class="ingredient__amount ingredient__cell">100 г</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--salad">
+																<use xlink:href="./images/icons/sprite.svg#salad"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Зелень</td>
+														<td class="ingredient__amount ingredient__cell">70 г</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--sauce">
+																<use xlink:href="./images/icons/sprite.svg#sauce"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Соус</td>
+														<td class="ingredient__amount ingredient__cell">150 г</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--cucumber">
+																<use xlink:href="./images/icons/sprite.svg#cucumber"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Овощи</td>
+														<td class="ingredient__amount ingredient__cell">200 г</td>
+													</tr>
+													<tr class="ingredients__item ingredient">
+														<td class="ingredient__img ingredient__cell">
+															<svg class="ingredient__pic ingredient__pic--cheese">
+																<use xlink:href="./images/icons/sprite.svg#cheese"></use>
+															</svg>
+														</td>
+														<td class="ingredient__name ingredient__cell">Сыр</td>
+														<td class="ingredient__amount ingredient__cell">80 г</td>
+													</tr>
+												</table>
+											</div>
+											<button class="ingredients__close" type="button">
+												<svg class="ingredients__close-pic">
+													<use xlink:href="./images/icons/sprite.svg#cross"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="burgers__calories calories">
+										<div class="calories__icon">
+										<svg class="calories__pic">
+											<use xlink:href="./images/icons/sprite.svg#kkal"></use>
+										</svg>
+										<div class="calories__number">1200</div>
+										</div>
+										<div class="calories__title">ккал</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<a class="slider__arrow slider__arrow--right js_next">
 							<svg class="arrow__icon arrow__icon--right">
 								<use xlink:href="./images/icons/sprite.svg#arrow-scroll"></use>
 							</svg>
@@ -256,9 +454,9 @@
 						<div class="team__content">
 							<h2 class="section__title section__title--team">Команда
 							</h2>
-							<ul class="team-acco">
-								<li class="team-acco__item">
-									<a href="" class="team-acco__name">Дэниел Редклиф</a>
+							<ul class="team-acco js-acco" data-active="team-acco__item--active">
+								<li class="team-acco__item js-acco-item">
+									<a href="" class="team-acco__name js-acco-trigger">Дэниел Редклиф</a>
 									<div class="team-acco__content">
 										<div class="team-acco__avatar-box">
 											<img src="images/content/team.jpg" alt="" class="team-acco__avatar">
@@ -269,8 +467,8 @@
 										</div>
 									</div>
 								</li>
-								<li class="team-acco__item team-acco__item--active">
-									<a href="" class="team-acco__name">Ричард Джеймс</a>
+								<li class="team-acco__item  js-acco-item">
+									<a href="" class="team-acco__name js-acco-trigger">Ричард Джеймс</a>
 									<div class="team-acco__content">
 										<div class="team-acco__avatar-box">
 											<img src="images/content/team.jpg" alt="" class="team-acco__avatar">
@@ -281,8 +479,8 @@
 										</div>
 									</div>
 								</li>
-								<li class="team-acco__item">
-									<a href="" class="team-acco__name">Джейк Финн</a>
+								<li class="team-acco__item js-acco-item">
+									<a href="" class="team-acco__name js-acco-trigger">Джейк Финн</a>
 									<div class="team-acco__content">
 										<div class="team-acco__avatar-box">
 											<img src="images/content/team.jpg" alt="" class="team-acco__avatar">
@@ -293,8 +491,8 @@
 										</div>
 									</div>
 								</li>
-								<li class="team-acco__item">
-									<a href="" class="team-acco__name">Николай Иванов</a>
+								<li class="team-acco__item js-acco-item">
+									<a href="" class="team-acco__name js-acco-trigger">Николай Иванов</a>
 									<div class="team-acco__content">
 										<div class="team-acco__avatar-box">
 											<img src="images/content/team.jpg" alt="" class="team-acco__avatar">
@@ -312,9 +510,9 @@
 
 				<section class="section menu">
 					<h2 class="section__title section__title--menu">Меню</h2>
-					<ul class="menu-acco">
-						<li class="menu-acco__item menu-acco__item--active">
-							<a href="" class="menu-acco__trigger menu-acco__trigger--meat">
+					<ul class="menu-acco js-acco" data-active="menu-acco__item--active">
+						<li class="menu-acco__item js-acco-item">
+							<a href="" class="menu-acco__trigger menu-acco__trigger--meat js-acco-trigger">
 								<div class="menu-acco__title">Для мясоедов</div>
 							</a>
 							<div class="menu-acco__content">
@@ -322,15 +520,15 @@
 									<p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
 									Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</p>
 								</div>
-								<button class="menu-acco__close" type="button">
+								<button class="menu-acco__close js-acco-close" type="button">
 									<svg class="menu-acco__close-pic">
 										<use xlink:href="./images/icons/sprite.svg#cross"></use>
 									</svg>
 								</button>
 							</div>
 						</li>
-						<li class="menu-acco__item">
-							<a href="" class="menu-acco__trigger menu-acco__trigger--vegan">
+						<li class="menu-acco__item js-acco-item">
+							<a href="" class="menu-acco__trigger menu-acco__trigger--vegan js-acco-trigger">
 								<div class="menu-acco__title">Вегетарианское</div>
 							</a>
 							<div class="menu-acco__content">
@@ -338,15 +536,15 @@
 									<p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
 									Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</p>
 								</div>
-								<button class="menu-acco__close" type="button">
+								<button class="menu-acco__close js-acco-close" type="button">
 									<svg class="menu-acco__close-pic">
 										<use xlink:href="./images/icons/sprite.svg#cross"></use>
 									</svg>
 								</button>
 							</div>
 						</li>
-						<li class="menu-acco__item">
-							<a href="" class="menu-acco__trigger menu-acco__trigger--diet">
+						<li class="menu-acco__item js-acco-item">
+							<a href="" class="menu-acco__trigger menu-acco__trigger--diet js-acco-trigger">
 								<div class="menu-acco__title">Диетическое</div>
 							</a>
 							<div class="menu-acco__content">
@@ -354,7 +552,7 @@
 									<p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
 									Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</p>
 								</div>
-								<button class="menu-acco__close" type="button">
+								<button class="menu-acco__close js-acco-close" type="button">
 									<svg class="menu-acco__close-pic">
 										<use xlink:href="./images/icons/sprite.svg#cross"></use>
 									</svg>
@@ -376,7 +574,16 @@
 									<div class="review__text">
 										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 									</div>
-									<a href="" class="review__button button">Подробнее</a>
+									<dialog class="review__full dialog" id="rewiew-dialog-1">
+										<div class="review__name review__name--full">Константин Спилберг</div>
+										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+										<button class="dialog__close js-dialog-close" type="button">
+											<svg class="dialog__close-pic">
+												<use xlink:href="./images/icons/sprite.svg#cross"></use>
+											</svg>
+										</button>
+									</dialog>
+									<a href="" class="review__button button js-dialog-open" data-dialog-id="rewiew-dialog-1">Подробнее</a>
 								</div>
 							</div>
 						</li>
@@ -390,7 +597,16 @@
 									<div class="review__text">
 										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 									</div>
-									<a href="" class="review__button button">Подробнее</a>
+									<dialog class="review__full dialog" id="rewiew-dialog-2">
+										<div class="review__name review__name--full">Константин Спилберг</div>
+										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+										<button class="dialog__close js-dialog-close" type="button">
+											<svg class="dialog__close-pic">
+												<use xlink:href="./images/icons/sprite.svg#cross"></use>
+											</svg>
+										</button>
+									</dialog>
+									<a href="" class="review__button button js-dialog-open" data-dialog-id="rewiew-dialog-2">Подробнее</a>
 								</div>
 							</div>
 						</li><li class="reviews__item">
@@ -403,7 +619,16 @@
 									<div class="review__text">
 										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 									</div>
-									<a href="" class="review__button button">Подробнее</a>
+									<dialog class="review__full dialog" id="rewiew-dialog-3">
+										<div class="review__name review__name--full">Константин Спилберг</div>
+										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+										<button class="dialog__close js-dialog-close" type="button">
+											<svg class="dialog__close-pic">
+												<use xlink:href="./images/icons/sprite.svg#cross"></use>
+											</svg>
+										</button>
+									</dialog>
+									<a href="" class="review__button button js-dialog-open" data-dialog-id="rewiew-dialog-3">Подробнее</a>
 								</div>
 							</div>
 						</li><li class="reviews__item">
@@ -416,7 +641,16 @@
 									<div class="review__text">
 										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 									</div>
-									<a href="" class="review__button button">Подробнее</a>
+									<dialog class="review__full dialog" id="rewiew-dialog-4">
+										<div class="review__name review__name--full">Константин Спилберг</div>
+										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+										<button class="dialog__close js-dialog-close" type="button">
+											<svg class="dialog__close-pic">
+												<use xlink:href="./images/icons/sprite.svg#cross"></use>
+											</svg>
+										</button>
+									</dialog>
+									<a href="" class="review__button button js-dialog-open" data-dialog-id="rewiew-dialog-4">Подробнее</a>
 								</div>
 							</div>
 						</li><li class="reviews__item">
@@ -429,7 +663,16 @@
 									<div class="review__text">
 										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 									</div>
-									<a href="" class="review__button button">Подробнее</a>
+									<dialog class="review__full dialog" id="rewiew-dialog-5">
+										<div class="review__name review__name--full">Константин Спилберг</div>
+										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+										<button class="dialog__close js-dialog-close" type="button">
+											<svg class="dialog__close-pic">
+												<use xlink:href="./images/icons/sprite.svg#cross"></use>
+											</svg>
+										</button>
+									</dialog>
+									<a href="" class="review__button button js-dialog-open" data-dialog-id="rewiew-dialog-5">Подробнее</a>
 								</div>
 							</div>
 						</li><li class="reviews__item">
@@ -442,7 +685,16 @@
 									<div class="review__text">
 										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 									</div>
-									<a href="" class="review__button button">Подробнее</a>
+									<dialog class="review__full dialog" id="rewiew-dialog-6">
+										<div class="review__name review__name--full">Константин Спилберг</div>
+										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+										<button class="dialog__close js-dialog-close" type="button">
+											<svg class="dialog__close-pic">
+												<use xlink:href="./images/icons/sprite.svg#cross"></use>
+											</svg>
+										</button>
+									</dialog>
+									<a href="" class="review__button button js-dialog-open" data-dialog-id="rewiew-dialog-6">Подробнее</a>
 								</div>
 							</div>
 						</li><li class="reviews__item">
@@ -455,7 +707,16 @@
 									<div class="review__text">
 										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 									</div>
-									<a href="" class="review__button button">Подробнее</a>
+									<dialog class="review__full dialog" id="rewiew-dialog-7">
+										<div class="review__name review__name--full">Константин Спилберг</div>
+										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+										<button class="dialog__close js-dialog-close" type="button">
+											<svg class="dialog__close-pic">
+												<use xlink:href="./images/icons/sprite.svg#cross"></use>
+											</svg>
+										</button>
+									</dialog>
+									<a href="" class="review__button button js-dialog-open" data-dialog-id="rewiew-dialog-7">Подробнее</a>
 								</div>
 							</div>
 						</li><li class="reviews__item">
@@ -468,7 +729,16 @@
 									<div class="review__text">
 										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 									</div>
-									<a href="" class="review__button button">Подробнее</a>
+									<dialog class="review__full dialog" id="rewiew-dialog-8">
+										<div class="review__name review__name--full">Константин Спилберг</div>
+										<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+										<button class="dialog__close js-dialog-close" type="button">
+											<svg class="dialog__close-pic">
+												<use xlink:href="./images/icons/sprite.svg#cross"></use>
+											</svg>
+										</button>
+									</dialog>
+									<a href="" class="review__button button js-dialog-open" data-dialog-id="rewiew-dialog-8">Подробнее</a>
 								</div>
 							</div>
 						</li>
@@ -478,7 +748,7 @@
 				<section class="section delivery">
 					<div class="container">
 						<h2 class="section__title section__title--delivery">Закажите доставку</h2>
-						<form action="" class="form">
+						<form action="server.php" method="POST" class="form" id="form">
 							<div class="form__column">
 								<div class="form__row">
 									<label class="form__field">
@@ -536,7 +806,7 @@
 								</div>
 								<div class="form__row form__row--shifted">
 									<label class="form__radio form__radio--checkbox">
-										<input class="form__control form__control--radio" type="checkbox" name="callback" checked>
+										<input class="form__control form__control--radio" type="checkbox" name="callback" value="1">
 										<div class="form__radio-fake"></div>
 										<span class="form__radio-label">Не перезванивать</span>
 									</label>
@@ -615,11 +885,8 @@
 
 			</div>
 		</div>
-		<ul class="fixed-menu">
+		<ul class="fixed-menu onepage-pagination">
 			<li class="fixed-menu__item fixed-menu__item--active">
-				<a href="" class="fixed-menu__link" data-goto="0"></a>
-			</li>
-			<li class="fixed-menu__item">
 				<a href="" class="fixed-menu__link" data-goto="1"></a>
 			</li>
 			<li class="fixed-menu__item">
@@ -640,13 +907,24 @@
 			<li class="fixed-menu__item">
 				<a href="" class="fixed-menu__link" data-goto="7"></a>
 			</li>
+			<li class="fixed-menu__item">
+				<a href="" class="fixed-menu__link" data-goto="8"></a>
+			</li>
 		</ul>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNV-3erEqR1kwJ8aTPYC_CqT1EmGzL_kk" type="text/javascript"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!-- build:js scripts/main.js -->
 		<script src="scripts/vendor/svg4everybody.js"></script>
 		<script>svg4everybody();</script>
+		<script src="scripts/vendor/dialog-polyfill.js"></script>
+		<script src="scripts/vendor/lory.min.js"></script>
+		<script src="scripts/vendor/jquery.onepage-scroll.js"></script>
 		<script src="scripts/map.js"></script>
 		<script src="scripts/main.js"></script>
+		<script src="scripts/accordeon.js"></script>
+		<script src="scripts/modal.js"></script>
+		<script src="scripts/form.js"></script>
+
 		<!-- endbuild -->
 	</body>
 </html>

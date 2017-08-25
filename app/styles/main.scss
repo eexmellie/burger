@@ -1,3 +1,7 @@
+//Vendor
+@import 'vendor/_dialog-polyfill';
+@import 'vendor/_onepage-scroll';
+
 // Config
 @import 'config/_functions';
 @import 'config/_variables';
@@ -9,6 +13,7 @@
 @import 'layout/_base';
 @import 'layout/_adjustment';
 @import 'layout/_controls';
+@import 'layout/_dialog';
 @import 'layout/_fixedmenu';
 
 //Sections

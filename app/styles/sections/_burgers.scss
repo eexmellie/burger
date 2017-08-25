@@ -10,35 +10,45 @@
 		height: 100%;
 	}
 	
-	&__list {
+	&__frame {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		height: 100%;
+
 		@include tablets {
-			width: 70%;
-			flex-direction: column;
-			align-self: center;
-			justify-content: center;
-			height: 75%;
-			display: flex;
-			align-items: center;
+			width: 85%;
 		}
 
 		@include phones {
-			width: 95%;
+			width: 90%;
 		}
+	}
+
+	&__list {
+		display: flex;
+		align-self: center;
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
+		height: 100%;
 	}
 
 	&__item {
 		display: flex;
 		position: relative;
 		flex-grow: 1;
-		flex-shrink: 1;
+		flex-shrink: 0;
 		min-height: 0;
-		align-items: flex-end;
-		align-self: stretch;
+		align-items: center;
+		flex-basis: 100%;
+		height: 75%;
 
 		@include tablets {
 			flex-direction: column;
 			justify-content: center;
 			align-self: center;
+			height: 90%;
 		}
 	}
 }
@@ -205,12 +215,21 @@
 
 		@include tablets {
 			min-width: rem(320px);
-			padding: rem(15px) rem(20px)
+			padding: rem(15px) rem(20px);
+		}
+
+		@include phones {
+			min-width: rem(250px);
+			padding: rem(15px) rem(20px);
 		}
 	}
 	
 	&__list-wrap {
 		margin-right: rem(35px);
+
+		@include phones {
+			margin-right: rem(15px);
+		}
 	}
 
 	&__list {
@@ -297,11 +316,12 @@
 
 .calories {
 	position: absolute;
-	top: 90%;
+	bottom: 0;
 	left: 0;
 
 	@include tablets {
 		top: 0;
+		bottom: auto;
 		left: 100%;
 		transform: translateX(-100%);
 	}
@@ -339,6 +359,7 @@
 
 .slider__arrow {
 	position: absolute;
+	z-index: 1;
 
 	&--left {
 		left: 3%;

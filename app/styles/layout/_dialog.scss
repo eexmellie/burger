@@ -1,0 +1,53 @@
+.dialog {
+	border: transparent;
+	border-radius: rem(5px);
+	padding: rem(30px) rem(20px);
+	color: $black;
+	display: block;
+	font-size: rem(14px);
+	font-weight: $light;
+	left: 20%;
+	right: 20%;
+	width: auto;
+	text-align: left;
+	line-height: 1.71;
+
+	@include tablets {
+		font-size: rem(14px);
+	}
+
+	@include phones {
+		font-size: rem(14px);
+		left: 5%;
+		right: 5%;
+	}
+}
+
+.dialog + .backdrop,
+.dialog::backdrop {
+	background: rgba($black, .92);
+}
+
+.dialog__close {
+	position: absolute;
+	right: rem(30px);
+	top: rem(30px);
+	opacity: .7;
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+
+	&:focus {
+		outline-color: $orange;
+		outline-style: dashed;
+		outline-width: thin;
+	}
+
+	&-pic {
+		width: rem(20px);
+		height: rem(20px);
+		fill: $orange;
+		display: block;
+	}
+}
