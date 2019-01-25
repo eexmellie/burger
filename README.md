@@ -1,3 +1,5 @@
 # Landing site demo
 
-https://eexmellie.github.io/burger/
+First study project.
+
+Live example can be seen here: https://eexmellie.github.io/burger/
